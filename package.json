@@ -1,0 +1,17 @@
+{
+  "name": "adventjs-2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "day_1": "node day_1/1.js",
+    "day_1:ts": "tsx day_1/1.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.19.2"
+  }
+}
