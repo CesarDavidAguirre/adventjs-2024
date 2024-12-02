@@ -6,6 +6,8 @@
   "scripts": {
     "day_1": "node day_1/1.js",
     "day_1:ts": "tsx day_1/1.ts",
+    "day_2": "node day_2/2.js",
+    "day_2:ts": "tsx day_2/2.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
