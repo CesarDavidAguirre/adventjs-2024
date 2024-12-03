@@ -22,5 +22,5 @@ Each day's challenge solution will be added to this repository as they are compl
    # Run the solution for day 1 in javascript
    npm run day_1
    # Run the solution for day 1 in typescript
-   npm run day_1_ts
+   npm run day_1:ts
    ```
