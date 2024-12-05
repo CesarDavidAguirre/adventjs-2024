@@ -12,6 +12,8 @@
     "day_3:ts": "tsx day_3/3.ts",
     "day_4": "node day_4/4.js",
     "day_4:ts": "tsx day_4/4.ts",
+    "day_5": "node day_5/5.js",
+    "day_5:ts": "tsx day_5/5.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
