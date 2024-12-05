@@ -1,7 +1,7 @@
 type Inventory = Array<{ name: string; quantity: number; category: string }>;
 
 function organizeInventoryTS(inventory: Inventory): object {
-  let result: Record<string, Record<string, number>> = {};
+  let result: object = {};
   for (const item of inventory) {
     const { name, quantity, category } = item;
     result[category] ??= {};
