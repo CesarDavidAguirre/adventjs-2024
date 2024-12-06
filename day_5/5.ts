@@ -22,7 +22,7 @@ function organizeShoesTS(shoes: Shoe[]): number[] {
 }
 
 console.log(
-  organizeShoes([
+  organizeShoesTS([
     { type: "I", size: 38 },
     { type: "R", size: 38 },
     { type: "R", size: 42 },
@@ -32,7 +32,7 @@ console.log(
 );
 
 console.log(
-  organizeShoes([
+  organizeShoesTS([
     { type: "I", size: 38 },
     { type: "R", size: 38 },
     { type: "I", size: 38 },
