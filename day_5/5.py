@@ -2,20 +2,17 @@ def organizeShoes(shoes):
     array_of_sizes = []
     shoes_dict = {}
     for shoe in shoes:
-        other_pair = "I" if (shoe["type"] == "R") else "R"
-        if shoes_dict.get(shoe["size"]) is None:
-            shoes_dict[shoe["size"]] = {}
-        if (
-            shoes_dict[shoe["size"]].get(other_pair) is not None
-            and shoes_dict[shoe["size"]].get(other_pair) > 0
-        ):
-
-            array_of_sizes.append(shoe["size"])
-            shoes_dict[shoe["size"]][other_pair] -= 1
+        size = shoe["size"]
+        type = shoe["type"]
+        other_pair = "I" if (type == "R") else "R"
+        shoes_dict.setdefault(size, {})
+        shoes_dict[size].setdefault(type, 0)
+        shoes_dict[size].setdefault(other_pair, 0)
+        if shoes_dict[size].get(other_pair) > 0:
+            array_of_sizes.append(size)
+            shoes_dict[size][other_pair] -= 1
         else:
-            if shoes_dict[shoe["size"]].get(shoe["type"]) is None:
-                shoes_dict[shoe["size"]][shoe["type"]] = 0
-            shoes_dict[shoe["size"]][shoe["type"]] += 1
+            shoes_dict[size][type] += 1
     return array_of_sizes
 
 
