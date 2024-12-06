@@ -13,6 +13,7 @@ mkdir "day_%next_day%"
 cd "day_%next_day%"
 type nul > %next_day%.js
 type nul > %next_day%.ts 
+type nul > %next_day%.py
 type nul > README.md
 cd ..
 
