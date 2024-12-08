@@ -9,6 +9,11 @@ for /d %%d in (day_*) do (
 )
 set /a next_day+=1
 
+if %next_day% equ 26 (
+    echo Congratulations! You have completed the Advent Calendar!
+    exit /b
+)
+
 mkdir "day_%next_day%"
 cd "day_%next_day%"
 type nul > %next_day%.js
