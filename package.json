@@ -25,6 +25,9 @@
     "day_7": "node day_7/7.js",
     "day_7:ts": "tsx day_7/7.ts",
     "day_7:py": "python day_7/7.py",
+    "day_8": "node day_8/8.js",
+    "day_8:ts": "tsx day_8/8.ts",
+    "day_8:py": "python day_8/8.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
