@@ -8,16 +8,16 @@ function drawRace(indices, length) {
   const lane = "~".repeat(length);
   for (let i = 0; i < indices.length; i++) {
     const position = indices[i];
-    let buildLine = " ".repeat(indices.length - i - 1);
+    let buildLane = " ".repeat(indices.length - i - 1);
     if (position === 0) {
-      buildLine += `${lane} /${i + 1}`;
+      buildLane += `${lane} /${i + 1}`;
     } else {
       let laneWithReno = lane.split("");
       const realPosition = position < 0 ? length + position : position;
       laneWithReno[realPosition] = "r";
-      buildLine += `${laneWithReno.join("")} /${i + 1}`;
+      buildLane += `${laneWithReno.join("")} /${i + 1}`;
     }
-    result.push(buildLine);
+    result.push(buildLane);
   }
   return result.join("\n");
 }
