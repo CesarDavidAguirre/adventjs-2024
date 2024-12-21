@@ -43,6 +43,9 @@
     "day_13": "node day_13/13.js",
     "day_13:ts": "tsx day_13/13.ts",
     "day_13:py": "python day_13/13.py",
+    "day_14": "node day_14/14.js",
+    "day_14:ts": "tsx day_14/14.ts",
+    "day_14:py": "python day_14/14.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
